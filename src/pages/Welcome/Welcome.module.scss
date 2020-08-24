@@ -1,0 +1,17 @@
+@import "../../style/style";
+.Welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $violet;
+
+  h1 {
+    font-size: 50px;
+    margin-top: 100px;
+  }
+
+  h2 {
+    color: darken($violet, 5%);
+    margin: 80px 0;
+  }
+}

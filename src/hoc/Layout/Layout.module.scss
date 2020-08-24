@@ -1,0 +1,13 @@
+@import "../../style/style.scss";
+.Layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient($aqua, $blue);
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
