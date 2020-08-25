@@ -10,7 +10,7 @@ const Welcome = () => {
             <h1>Добро пожаловать в &#60;Quiz-o-FrontEnd &#47;&#62;!</h1>
             <h2>Проверь свои знания, докажи, что ты уже не junior ;)</h2>
             <Link to="/quiz">
-                <Button>Жми сюда!</Button>
+                <Button cls={'ButtonMain'} >Жми сюда!</Button>
             </Link>
         </div>
     );

@@ -19,7 +19,6 @@ const AnswersList = props => {
 
         <ul className={classes.AnswersList}>
             {list}
-
         </ul>
     );
 };

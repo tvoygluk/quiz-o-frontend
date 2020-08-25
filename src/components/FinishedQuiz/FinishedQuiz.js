@@ -1,41 +1,39 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import classes from './FinishedQuiz.module.scss'
+import FinishedList from "./FinishedList/FinishedList";
+import Button from "../UI/Button/Button";
 
-const FinishedQuiz = ({quiz: quizArray, rightAnswersCount: rightAnswers, onRetryClick}) => {
+const FinishedQuiz = props => {
 
-    const quizItems = quizArray.map((card, index) => {
-        let cls = ['fa'];
+    const [count, setCount] = useState(0);
 
-        if( card.isCorrectAnswer === true ) {
-            cls.push('fa-check');
-            cls.push(classes.success);
-        } else {
-            cls.push('fa-times');
-            cls.push(classes.error);
+    useEffect(() => {
+        if (props.answers !== {}) {
+            Object.values(props.answers).forEach((val) => {
+                if (val === 'success') {
+                    setCount(prev => prev + 1)
+                }
+            })
         }
-
-        return (
-            <li key={index}>
-                <strong>{index + 1}. </strong>
-                {card.question}
-                <i className={cls.join(' ')} />
-            </li>
-        )
-    });
+    },[props.answers]);
 
     return (
         <div className={classes.FinishedQuiz}>
-            <ul>
-                {quizItems}
-            </ul>
 
-            <p>Правильно {rightAnswers} из {quizArray.length}</p>
+            <FinishedList
+                quizArray={props.quiz}
+                answers={props.answers}
+            />
 
-            <div>
-                <button onClick={onRetryClick}>Повторить</button>
-            </div>
+            <p>Правильно {count} из {props.quiz.length}</p>
+
+            <Button
+                cls={'Button'}
+                onClick={props.onRetryClick}
+            >Повторить</Button>
+
         </div>
     );
-};
+}
 
 export default FinishedQuiz;
