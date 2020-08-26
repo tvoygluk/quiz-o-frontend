@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from './Question.module.scss';
 
-const Question1 = () => {
+const Question2 = () => {
     return (
-        <pre className={classes.Question} style={{color: '#000020', background: '#f6f8ff'}}>function Person2(name, age, sex) {"{"}{"\n"}{"  "}this<span style={{color: '#008c00'}}>.</span>name = name;{"\n"}{"  "}this<span style={{color: '#008c00'}}>.</span>age = age;{"\n"}{"  "}this<span style={{color: '#008c00'}}>.</span>sex = sex;{"\n"}{"}"}{"\n"}{"\n"}var rand = new Person('Rand McKinnon', <span style={{color: '#008c00'}}>33</span>, 'M');{"\n"}var ken = new Person('Ken Jones', <span style={{color: '#008c00'}}>39</span>, 'M');{"\n"}</pre>
+        <pre className={classes.Question} style={{color: '#000020', background: '#f6f8ff'}}>let foo = <span style={{color: '#008c00'}}>1</span>;{"\n"}const bar = () =&gt; {"{"}{"\n"}{"  "}foo = <span style={{color: '#008c00'}}>10</span>;{"\n"}{"  "}function foo() {"{"}{"}"}{"\n"}{"  "}return;{"\n"}{"}"}{"\n"}bar();{"\n"}console<span style={{color: '#008c00'}}>.</span>log(foo);{"\n"}</pre>
     );
 };
 
-export default Question1;
+export default Question2;

@@ -13,24 +13,57 @@ class Quiz extends Component {
         quiz: [
             {
                 id: 1,
-                rightAnswerId: 1,
+                rightAnswerId: 4,
                 question: 'Что выведет консоль?',
                 answers: [
-                    {text: 'Syntax error', id: 1},
-                    {text: '42', id: 2},
-                    {text: 'Reference error', id: 3},
-                    {text: 'baz', id: 4}
+                    {text: '10', id: 1},
+                    {text: '91', id: 2},
+                    {text: '"4321"', id: 3},
+                    {text: '"91"', id: 4}
                 ],
             },
             {
                 id: 2,
-                rightAnswerId: 1,
-                question: 'В каком порядке сработают логи?',
+                rightAnswerId: 3,
+                question: 'Что выведет консоль?',
                 answers: [
-                    {text: '123', id: 1},
-                    {text: '213', id: 2},
-                    {text: '132', id: 3},
-                    {text: '231', id: 4}
+                    {text: '10', id: 1},
+                    {text: 'function', id: 2},
+                    {text: '1', id: 3},
+                    {text: 'TypeError', id: 4}
+                ],
+            },
+            {
+                id: 3,
+                rightAnswerId: 4,
+                question: 'Что выведет консоль?',
+                answers: [
+                    {text: '4', id: 1},
+                    {text: '3', id: 2},
+                    {text: '2', id: 3},
+                    {text: 'undefined', id: 4}
+                ],
+            },
+            {
+                id: 4,
+                rightAnswerId: 2,
+                question: 'В каком порядке выведутся логи?',
+                answers: [
+                    {text: '0231', id: 1},
+                    {text: '0213', id: 2},
+                    {text: '1302', id: 3},
+                    {text: '0123', id: 4}
+                ],
+            },
+            {
+                id: 5,
+                rightAnswerId: 1,
+                question: 'Что выведет консоль?',
+                answers: [
+                    {text: '[AsyncFunction: bar]', id: 1},
+                    {text: 'foo', id: 2},
+                    {text: '[AsyncFunction: foo]', id: 3},
+                    {text: 'bar', id: 4}
                 ],
             },
         ],
