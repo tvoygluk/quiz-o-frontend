@@ -7,10 +7,9 @@ const Welcome = () => {
 
     return (
         <div className={classes.Welcome}>
-            <h1>Добро пожаловать в &#60;Quiz-o-FrontEnd &#47;&#62;!</h1>
-            <h2>Проверь свои знания, докажи, что ты уже не junior ;)</h2>
+            <h1>&#60;Quiz-o-FrontEnd&#47;&#62;</h1>
             <Link to="/quiz">
-                <Button cls={'ButtonMain'} >Жми сюда!</Button>
+                <Button cls={'ButtonMain'} >START</Button>
             </Link>
         </div>
     );
