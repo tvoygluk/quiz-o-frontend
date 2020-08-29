@@ -1,0 +1,10 @@
+@import   "../../../style/style";
+
+.Footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: 'Noto Sans TC', sans-serif;
+  padding: 10px 20px;
+}
