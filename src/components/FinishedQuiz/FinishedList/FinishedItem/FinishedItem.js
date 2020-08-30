@@ -6,7 +6,7 @@ const FinishedItem = props => {
     return (
         <li key={props.index} className={classes.FinishedItem}>
             <strong>{props.index + 1}. </strong>
-            {/*{props.card.question}*/}
+            <a href={props.card.link}>{props.card.theme}</a>
             <i className={props.cls.join(' ')} />
         </li>
     );

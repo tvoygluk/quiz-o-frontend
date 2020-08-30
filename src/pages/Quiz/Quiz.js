@@ -150,25 +150,31 @@ class Quiz extends Component {
         return (
             <div className={classes.Quiz}>
                 <div className={classes.QuizWrapper}>
-                    <h1>Quiz-o-Frontend</h1>
 
                     {this.state.isFinished
                         ?
-                            <FinishedQuiz
-                                quiz={this.state.quiz}
-                                onRetryClick={this.onRetryClick}
-                                answers={this.state.answers}
-                            />
+                            <>
+                                <h2>Поздравляем с окончанием квиза!</h2>
+                                <h3>Если ошиблись - можете ознакомиться<br/> с материалом по ссылкам ниже <br/>и попробовать свои силы снова!</h3>
+                                <FinishedQuiz
+                                    quiz={this.state.quiz}
+                                    onRetryClick={this.onRetryClick}
+                                    answers={this.state.answers}
+                                />
+                            </>
                         : this.state.hadQuizState
                             ?
-                                <ActiveQuiz
-                                    quizLength={this.state.quiz.length}
-                                    question={this.state.quiz[this.state.activeQuestion].question}
-                                    activeQuestion={this.state.activeQuestion + 1}
-                                    answers={this.state.quiz[this.state.activeQuestion].answers}
-                                    onAnswerClick={this.onAnswerClick}
-                                    answerState={this.state.answerState}
-                                />
+                                <>
+                                    <h1>Quiz-o-Frontend</h1>
+                                    <ActiveQuiz
+                                        quizLength={this.state.quiz.length}
+                                        question={this.state.quiz[this.state.activeQuestion].question}
+                                        activeQuestion={this.state.activeQuestion + 1}
+                                        answers={this.state.quiz[this.state.activeQuestion].answers}
+                                        onAnswerClick={this.onAnswerClick}
+                                        answerState={this.state.answerState}
+                                    />
+                                </>
                             :
                                 <Loader />
                     }
