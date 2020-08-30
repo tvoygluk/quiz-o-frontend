@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className={classes.Footer}>
             <span>By Maxim Medyanik : <a href="https://github.com/tvoygluk/quiz-o-frontend">github.com/tvoygluk/quiz-o-frontend</a></span>
-            <span>v.0.2.0</span>
+            <span>Desktop v.0.2.0</span>
         </footer>
     );
 };

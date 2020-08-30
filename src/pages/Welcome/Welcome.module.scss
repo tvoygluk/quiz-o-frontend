@@ -1,7 +1,7 @@
 @import "../../style/style";
 
 .Welcome {
-  height: 100%;
+  flex-grow: 1;
   display: grid;
   grid-template: 1fr fit-content(100%) 2fr fit-content(100%) 4fr fit-content(100%)/ 1fr;
   grid-template-areas:  "."
