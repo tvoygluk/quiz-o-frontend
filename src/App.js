@@ -4,6 +4,7 @@ import Layout from "./hoc/Layout/Layout";
 import {Route, BrowserRouter, Switch} from "react-router-dom";
 import Quiz from "./pages/Quiz/Quiz";
 
+
 function App() {
 
     const routes = (

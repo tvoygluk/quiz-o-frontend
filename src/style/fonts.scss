@@ -1,6 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@font-face {
+  font-family: 'Rubik Mono One';
+  src:  url('./fonts/RubikMonoOne-Regular.woff2') format('woff2'),
+        url('./fonts/RubikMonoOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-display: fallback;
+}
 
-//todo try react-helmet
-// https://medium.com/front-end-in-regions-grodno/%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B8%D1%80%D1%83%D0%B5%D0%BC-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D1%83-%D1%80%D1%83%D0%BA%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%BE%D0%B3%D0%BE-%D1%88%D1%80%D0%B8%D1%84%D1%82%D0%B0-258fb9bee001
+@font-face {
+  font-family: 'Press Start 2P';
+  src:  url('./fonts/PressStart2P-Regular.woff2') format('woff2'),
+        url('./fonts/PressStart2P-Regular.woff') format('woff');
+  font-weight: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src:  url('./fonts/NotoSansTC-Regular.woff2') format('woff2'),
+        url('./fonts/NotoSansTC-Regular.woff') format('woff');
+  font-weight: normal;
+  font-display: fallback;
+}
