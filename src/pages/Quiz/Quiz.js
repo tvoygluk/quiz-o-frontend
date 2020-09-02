@@ -4,6 +4,7 @@ import classes from './Quiz.module.scss'
 import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
 import Loader from "../../components/UI/Loader/Loader";
+import {connect} from "react-redux";
 
 class Quiz extends Component {
     /* answerState: { [id]: 'success' } либо answerState: { [id]: 'error' } */
@@ -184,4 +185,22 @@ class Quiz extends Component {
     }
 }
 
-export default Quiz;
+function mapStateToProps(state) {
+    return {
+        isFinished: state.isFinished,
+        activeQuestion: state.activeQuestion,
+        answerState: state.answerState,
+        answers: state.answers,
+        quiz: state.quiz,
+        hadQuizState: state.hadQuizState,
+
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        onRetryClick: () => dispatch(onRetryClick())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Quiz);
