@@ -7,13 +7,15 @@ import Footer from "./Footer/Footer";
 const Welcome = () => {
 
     return (
-        <div className={classes.Welcome}>
-            <h1>&#60;Quiz-o-FrontEnd&#47;&#62;</h1>
-            <Link to="/quiz">
-                <Button cls={'ButtonMain'} >START</Button>
-            </Link>
+        <>
+            <div className={classes.Welcome}>
+                <h1>&#60;Quiz-o-FrontEnd&#47;&#62;</h1>
+                <Link to="/quiz">
+                    <Button cls={'ButtonMain'} >START</Button>
+                </Link>
+            </div>
             <Footer />
-        </div>
+        </>
     );
 };
 

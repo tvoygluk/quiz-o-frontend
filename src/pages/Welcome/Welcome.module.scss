@@ -1,18 +1,19 @@
 @import "../../style/style";
 
 .Welcome {
-  flex-grow: 1;
+
+  flex: 1 0 auto;
   display: grid;
-  grid-template: 1fr fit-content(100%) 2fr fit-content(100%) 4fr fit-content(100%)/ 1fr;
+  grid-template: 1fr fit-content(100%) 2fr fit-content(100%) 4fr/ 1fr;
   grid-template-areas:  "."
                         "title"
                         "."
                         "button"
-                        "."
-                        "footer";
+                        ".";
 
   h1 {
     grid-area: title;
+    white-space: nowrap;
     margin: 0 auto;
     padding: 20px;
     font-family: 'Rubik Mono One', sans-serif;
@@ -30,7 +31,7 @@
 @media (max-width: $resize-width) {
   .Welcome {
     h1 {
-      font-size: 42px;
+      font-size: 4vw;
     }
   }
 }

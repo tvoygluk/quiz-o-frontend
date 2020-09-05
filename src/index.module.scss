@@ -1,12 +1,12 @@
 @import "style/style";
 
 html {
-  height: 100%;
   box-sizing: border-box;
-  min-width: $tablet-width;
+  height: 100%;
 }
 
 body {
+  //min-width: $tablet-width;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -19,7 +19,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   & > div {
-    flex-grow: 1;
+    height: 100%;
+    //flex-grow: 1;
     display: flex;
     flex-direction: column;
   }

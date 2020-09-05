@@ -81,3 +81,11 @@
     transform: scale(0.9, 0.9);
   }
 }
+
+@media (max-width: $tablet-width) {
+  .ButtonMain {
+    font-size: 4vw;
+    padding: 3vw 4vw;
+    border: #000 solid 2vw;
+  }
+}
