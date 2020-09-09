@@ -1,3 +1,5 @@
+@import '../../style/style';
+
 .FinishedQuiz {
   padding: 20px;
   color: #fff;
@@ -8,3 +10,12 @@
 }
 
 
+@media (max-width: $resize-width) {
+
+  .FinishedQuiz {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 3vw;
+  }
+
+}

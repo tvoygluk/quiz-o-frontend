@@ -1,10 +1,13 @@
+@import '../../style/style';
+
 .ActiveQuiz {
   padding: 20px;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 5px;
-  margin: 0 10px;
+  //margin: 0 10px;
   box-sizing: border-box;
+  font-size: 18px;
 
   .Question {
     display: flex;
@@ -14,5 +17,12 @@
   small {
     min-width: fit-content;
     padding-left: 10px;
+  }
+}
+
+@media (max-width: $resize-width) {
+  .ActiveQuiz {
+    font-size: 3vw;
+    padding: 10px 15px;
   }
 }
