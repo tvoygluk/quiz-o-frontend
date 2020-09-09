@@ -21,8 +21,9 @@
   min-width: 600px;
 }
 
-@media (max-width: $resize-width) {
+@media (max-width: $tablet-width) {
   .QuizWrapper {
+    width: 100%;
     min-width: 250px;
   }
 
@@ -39,3 +40,9 @@
     color: #00000094;
   }
 }
+
+//@media (max-width: $tablet-width) {
+//  .QuizWrapper {
+//    width: 100%;
+//  }
+//}
