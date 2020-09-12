@@ -22,7 +22,7 @@ const Quiz = props => {
                 {props.isFinished
                     ?
                         <>
-                            <h2>&#60;THE END &#47;&#62;</h2>
+                            <h2 className={classes.endTitle}>&#60;THE END&#47;&#62;</h2>
                             <h3>Ошиблись?<br/>Ознакомьтесь с материалами <br/>и попробуйте свои силы снова!</h3>
                             <FinishedQuiz
                                 quiz={props.quiz}

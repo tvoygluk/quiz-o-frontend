@@ -13,14 +13,19 @@
     text-align: center;
   }
 
+  .endTitle {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+
   .title {
-    font-family: 'Rubik Mono One', sans-serif;
-    font-weight: normal;
     font-size: 40px;
     margin-top: 80px;
   }
 
   h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: normal;
     text-shadow: 1px 4px 6px rgba(0,0,0,0.42);
   }
 
@@ -44,8 +49,8 @@
     font-size: 7vw !important;
   }
 
-  h2 {
-    font-size: 6vw;
+  .endTitle {
+    font-size: 5vw !important;
   }
 
   h3 {
