@@ -23,7 +23,11 @@
 
 @media (max-width: $tablet-width) {
   .ActiveQuiz {
-    font-size: 2.5vw;
+    font-size: 2.6vw;
     padding: 10px 15px;
+
+    .Question {
+      font-size: 3vw;
+    }
   }
 }
