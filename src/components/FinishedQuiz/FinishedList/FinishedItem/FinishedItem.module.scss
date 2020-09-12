@@ -1,7 +1,16 @@
 .FinishedItem {
+  display: flex;
+  align-items: flex-end;
   margin-bottom: 5px;
+
+  strong {
+    min-width: 35px;
+    text-align: center;
+    padding-right: 5px;
+  }
 
   i {
     margin-left: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.45);
   }
 }

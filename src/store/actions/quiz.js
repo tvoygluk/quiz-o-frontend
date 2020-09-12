@@ -12,4 +12,4 @@ export const getData = () => async dispatch => {
     } catch (error) {
         dispatch(processQuizError(error));
     }
-}
+};

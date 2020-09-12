@@ -27,7 +27,7 @@ const app = (
             <App />
         </React.StrictMode>
     </Provider>
-)
+);
 
 ReactDOM.render(
     app,

@@ -16,7 +16,7 @@ const initialState = {
     quiz: [],
     hadQuizState: false,
     error: null,
-}
+};
 
 const handlers = {
 
@@ -58,11 +58,11 @@ const handlers = {
     }),
 
     DEFAULT: state => state
-}
+};
 
 const rootReducer = (state = initialState, action) => {
     const handler = handlers[action.type] || handlers.DEFAULT;
     return handler(state, action);
-}
+};
 
 export default rootReducer;

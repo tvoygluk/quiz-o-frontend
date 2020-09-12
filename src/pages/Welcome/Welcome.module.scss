@@ -17,9 +17,13 @@
     margin: 0 auto;
     padding: 20px;
     font-family: 'Rubik Mono One', sans-serif;
-    color: black;
+    color: $ice-cold;
+    background-color: $welcome-bg-color;
     font-size: 47px;
-    border: #000 solid 10px;
+    text-shadow: 1px 4px 6px rgba(0, 0, 0, 0.42);
+    border: $cerulean solid 10px;
+    border-radius: 2px;
+    box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.4), 4px 4px 4px 3px rgba(0, 0, 0, 0.4) inset;
   }
 
   a {
@@ -31,7 +35,7 @@
 @media (max-width: $resize-width) {
   .Welcome {
     h1 {
-      font-size: 4vw;
+      font-size: 4.5vw;
     }
   }
 }

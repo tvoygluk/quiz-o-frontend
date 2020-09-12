@@ -24,7 +24,7 @@
 }
 
 .ldio-ai8pfomxtc > div div:nth-child(1) > div {
-  background: #dae4e5;
+  background: $gray-tech-1;
   transform: rotate(0deg);
 }
 
@@ -33,7 +33,7 @@
 }
 
 .ldio-ai8pfomxtc > div div:nth-child(2) > div {
-  background: #adbcbf;
+  background: $gray-tech-2;
   transform: rotate(0deg);
 }
 .ldio-ai8pfomxtc > div div:nth-child(3) {
@@ -41,7 +41,7 @@
 }
 
 .ldio-ai8pfomxtc > div div:nth-child(3) > div {
-  background: #77868b;
+  background: $gray-tech-3;
   transform: rotate(0deg);
 }
 
@@ -50,7 +50,7 @@
 }
 
 .ldio-ai8pfomxtc > div div:nth-child(4) > div {
-  background: #53585a;
+  background: $gray-tech-4;
   transform: rotate(0deg);
 }
 
@@ -74,17 +74,3 @@
 }
 
 .ldio-ai8pfomxtc div {box-sizing: content-box;}
-
-
-//@media (max-width: $tablet-width) {
-//
-//  .loadingio-spinner-wedges-bupquaychks {
-//    margin: 100px auto 0 auto;
-//    width: 100px;
-//    height: 100px;
-//  }
-//
-//  .ldio-ai8pfomxtc {
-//    transform: translateZ(0) scale(0.5);
-//  }
-//}

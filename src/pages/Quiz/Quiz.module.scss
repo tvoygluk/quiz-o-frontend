@@ -3,22 +3,32 @@
 .Quiz {
   display: flex;
   justify-content: center;
-  padding: 100px 0 50px 0;
+  padding: 30px 0 50px 0;
   flex-grow: 1;
   width: 100%;
-  color: #fff;
+  color: $ice-cold;
 
-  h1,
   h2,
   h3 {
-    //color: #fff;
     text-align: center;
   }
+
+  .title {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  h2 {
+    text-shadow: 1px 4px 6px rgba(0,0,0,0.42);
+  }
+
   h3 {
-    color: #00000094;
+    color: $gray;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
   }
 }
-
 
 .QuizWrapper {
   min-width: 600px;
@@ -30,8 +40,8 @@
     min-width: 250px;
   }
 
-  h1 {
-    font-size: 9vw;
+  .title {
+    font-size: 7vw !important;
   }
 
   h2 {
@@ -42,9 +52,3 @@
     font-size: 4vw;
   }
 }
-
-//@media (max-width: $tablet-width) {
-//  .QuizWrapper {
-//    width: 100%;
-//  }
-//}

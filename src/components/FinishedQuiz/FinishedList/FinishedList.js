@@ -29,7 +29,7 @@ const FinishedList = props => {
 
         )
 
-    })
+    });
 
     return (
         <ul className={classes.FinishedList}>
@@ -37,6 +37,6 @@ const FinishedList = props => {
         </ul>
     );
 
-}
+};
 
 export default FinishedList;

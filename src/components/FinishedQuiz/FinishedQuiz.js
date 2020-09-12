@@ -25,15 +25,17 @@ const FinishedQuiz = props => {
                 answers={props.answers}
             />
 
-            <p>Правильно {count} из {props.quiz.length}</p>
+            <div className={classes.wrapper}>
+                <Button
+                    cls={'Button'}
+                    onClick={props.onRetryClick}
+                >Повторить</Button>
 
-            <Button
-                cls={'Button'}
-                onClick={props.onRetryClick}
-            >Повторить</Button>
+                <p>Правильно {count} из {props.quiz.length}</p>
+            </div>
 
         </div>
     );
-}
+};
 
 export default FinishedQuiz;

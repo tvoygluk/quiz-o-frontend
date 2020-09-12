@@ -6,7 +6,7 @@ export const nextQuestion = activeQuestion => ({type: NEXT_QUESTION, activeQuest
 
 const isFinishedQuiz = (state) => {
     return state.quiz.length === state.activeQuestion + 1;
-}
+};
 
 export const onAnswerClick = answerId => (dispatch, getState) => {
     const state = getState();
@@ -45,4 +45,4 @@ export const onAnswerClick = answerId => (dispatch, getState) => {
             dispatch(changeAnswerState({ [answerId]: ERROR }, answers));
         }
     }
-}
+};

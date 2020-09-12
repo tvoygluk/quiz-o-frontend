@@ -1,28 +1,29 @@
 @import '../../style/style';
 
 .ActiveQuiz {
-  padding: 20px;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  //margin: 0 10px;
-  box-sizing: border-box;
-  font-size: 18px;
+  @extend %quiz-card;
 
   .Question {
     display: flex;
     justify-content: space-between;
+
+    strong {
+      color: $cascade;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
   }
 
   small {
     min-width: fit-content;
     padding-left: 10px;
+    color: $cascade;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   }
 }
 
 @media (max-width: $tablet-width) {
   .ActiveQuiz {
-    font-size: 3vw;
+    font-size: 2.5vw;
     padding: 10px 15px;
   }
 }

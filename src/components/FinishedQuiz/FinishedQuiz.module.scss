@@ -1,21 +1,28 @@
 @import '../../style/style';
 
 .FinishedQuiz {
-  padding: 20px;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin: 0 10px;
+  @extend %quiz-card;
+
+  a {
+    text-shadow: none;
+    color: $ice-cold;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+  }
 }
 
-
 @media (max-width: $tablet-width) {
-
   .FinishedQuiz {
     padding: 10px;
     margin: 0 5px;
     font-size: 3vw;
   }
-
 }

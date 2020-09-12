@@ -1,54 +1,47 @@
 @import "../../../style/style";
 
 .Button {
-  background-color: #77bf36de;
+  background-color: $finished-button-color;
   display: inline-block;
   padding: 10px 20px;
   border-radius: 4px;
-  border: 1px solid #ccc;
-  color: #fff;
-  margin-right: 15px;
+  border: 1px solid $white-gray;
+  color: $white;
+  margin: 10px 10px 0;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
   cursor: pointer;
 
-  &.error {
-    background-color: rgba(240, 87, 108, 1);
-  }
-
-  &.success {
-    background-color: rgba(161, 240, 69, 1);
-  }
-
-  &.primary {
-    background-color: #2884f6;
-    color: #fff;
+  &:hover {
+    background-color: lighten($finished-button-color, 7%);
+    transition: all .1s ease-in-out;
   }
 
   &:focus {
     outline: none;
-
   }
 
   &:active {
-    box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 2px 2px 1px $black-opacity-30;
+    background-color: darken($finished-button-color, 3%);
   }
 
   &:disabled {
-    background-color: #ccc;
-    color: #000;
+    background-color: $white-gray;
+    color: $black;
     cursor: not-allowed;
   }
 
 }
 
 .ButtonMain {
-  box-shadow: 0 10px 14px -7px #276873;
-  background-color: rgba( 0, 0, 0, .3);
-  border: #000 solid 10px;
-  cursor:pointer;
-  color:#fff;
+  box-shadow: 3px 5px 13px 0 $gray, 3px 5px 13px 0 $gray inset;
+  background-color: $black-opacity-40;
+  border: $cascade solid 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: $ice-cold;
   font-family: 'Press Start 2P', sans-serif;
   font-size: 30px;
   padding:19px 32px;
@@ -56,17 +49,16 @@
   animation: pulsing 3s infinite;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: black;
+    background-color: $white-opacity-30;
+    color: $black;
     transition: all .1s ease-in-out;
-
   }
 
   &:active,
   &:focus {
     outline: none;
     position:relative;
-    background-color: rgba( 0, 0, 0, .3);
+    background-color: $black-opacity-30;
   }
 }
 
@@ -86,7 +78,7 @@
   .ButtonMain {
     font-size: 4vw;
     padding: 3vw 4vw;
-    border: #000 solid 2vw;
+    border-width: 2vw;
   }
 
   .Button {

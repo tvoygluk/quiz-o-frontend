@@ -22,8 +22,8 @@ const Quiz = props => {
                 {props.isFinished
                     ?
                         <>
-                            <h2>Поздравляем с окончанием квиза!</h2>
-                            <h3>Если ошиблись - можете ознакомиться<br/> с материалом по ссылкам ниже <br/>и попробовать свои силы снова!</h3>
+                            <h2>&#60;THE END &#47;&#62;</h2>
+                            <h3>Ошиблись?<br/>Ознакомьтесь с материалами <br/>и попробуйте свои силы снова!</h3>
                             <FinishedQuiz
                                 quiz={props.quiz}
                                 onRetryClick={props.onRetryClick}
@@ -33,7 +33,7 @@ const Quiz = props => {
                     : props.hadQuizState
                         ?
                             <>
-                                <h1>Quiz-o-Frontend</h1>
+                                <h2 className={classes.title}>Quiz-o-Frontend</h2>
                                 <ActiveQuiz
                                     quizLength={props.quiz.length}
                                     question={props.quiz[props.activeQuestion].question}

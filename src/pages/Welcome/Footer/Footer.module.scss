@@ -7,6 +7,10 @@
   justify-content: space-between;
   font-size: 20px;
   font-family: 'Noto Sans TC', sans-serif;
+
+  .link {
+    color: $ice-cold;
+  }
 }
 
 @media (max-width: $resize-width) {
@@ -25,7 +29,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: $pre-tablet-width) {
   .author {
     font-size: 5vw;
   }
