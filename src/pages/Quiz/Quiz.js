@@ -13,7 +13,7 @@ const Quiz = props => {
     useEffect(() => {
         props.getQuizzes();
         // eslint-disable-next-line
-    },[])
+    },[]);
 
     return (
         <div className={classes.Quiz}>
@@ -52,7 +52,7 @@ const Quiz = props => {
         </div>
     );
 
-}
+};
 
 function mapStateToProps(state) {
     return {

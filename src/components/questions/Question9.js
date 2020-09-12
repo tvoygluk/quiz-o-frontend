@@ -1,0 +1,10 @@
+import React from 'react';
+import classes from './Question.module.scss';
+
+const Question9 = () => {
+    return (
+        <pre className={classes.Question} style={{color: '#000020', background: '#f6f8ff'}}><span style={{color: '#200080', fontWeight: 'bold'}}>div</span><span style={{color: '#406080'}}>:</span><span style={{color: '#200080', fontWeight: 'bold'}}>nth-last-child</span><span style={{color: '#406080'}}>(</span><span style={{color: '#008c00'}}>2</span><span style={{color: '#006600'}}>n</span><span style={{color: '#406080'}}>)</span><span style={{color: '#406080'}}>:</span><span style={{color: '#200080', fontWeight: 'bold'}}>not</span><span style={{color: '#406080'}}>(</span><span style={{color: '#406080'}}>:</span><span style={{color: '#200080', fontWeight: 'bold'}}>nth-child</span><span style={{color: '#406080'}}>(</span><span style={{color: '#008c00'}}>3</span><span style={{color: '#006600'}}>n</span><span style={{color: '#406080'}}>)</span><span style={{color: '#406080'}}>)</span> <span style={{color: '#406080'}}>{"{"}</span>{"\n"}{"    "}<span style={{color: '#7779bb', fontWeight: 'bold'}}>height</span><span style={{color: '#308080'}}>:</span> <span style={{color: '#008c00'}}>50</span><span style={{color: '#006600'}}>px</span><span style={{color: '#406080'}}>;</span>{"\n"}{"    "}<span style={{color: '#7779bb', fontWeight: 'bold'}}>margin</span><span style={{color: '#308080'}}>:</span> <span style={{color: '#008c00'}}>10</span><span style={{color: '#006600'}}>px</span><span style={{color: '#406080'}}>;</span>{"\n"}{"    "}<span style={{color: '#7779bb', fontWeight: 'bold'}}>background-color</span><span style={{color: '#308080'}}>:</span> <span style={{color: '#007d45'}}>green</span><span style={{color: '#406080'}}>;</span>{"\n"}<span style={{color: '#406080'}}>{"}"}</span>{"\n"}</pre>
+    );
+};
+
+export default Question9;

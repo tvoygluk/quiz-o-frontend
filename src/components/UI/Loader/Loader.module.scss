@@ -1,3 +1,5 @@
+@import '../../../style/style';
+
 @keyframes ldio-ai8pfomxtc {
   0% {transform: rotate(0deg)}
   100% {transform: rotate(360deg)}
@@ -53,7 +55,7 @@
 }
 
 .loadingio-spinner-wedges-bupquaychks {
-  margin: 50px auto 0 auto;
+  margin: 8vh auto 0 auto;
   text-align: center;
   width: 200px;
   height: 200px;
@@ -72,3 +74,17 @@
 }
 
 .ldio-ai8pfomxtc div {box-sizing: content-box;}
+
+
+//@media (max-width: $tablet-width) {
+//
+//  .loadingio-spinner-wedges-bupquaychks {
+//    margin: 100px auto 0 auto;
+//    width: 100px;
+//    height: 100px;
+//  }
+//
+//  .ldio-ai8pfomxtc {
+//    transform: translateZ(0) scale(0.5);
+//  }
+//}
